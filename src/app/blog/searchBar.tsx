@@ -11,7 +11,7 @@ export default function SearchBar({
 }) {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(e.target.search.value);
+    // @ts-ignore
     setSearch(e.target.search.value);
   };
   return (

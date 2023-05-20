@@ -46,7 +46,6 @@ export default function Blog() {
     let result = await fetch(`/api/articles?search=${search}`).then((r) =>
       r.json()
     );
-    console.log(result);
     setResult(result);
   };
 
